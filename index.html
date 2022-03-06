@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Seguro No Pagamos Cooperativa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="styles/estilos.css" media="screen">
+    <link rel="shortcut icon" href="#"/>
+</head>
+
+<body>
+<header>
+    <div id="container_header">
+        <div id="logo">
+            <img src="styles/images/logo_shield.png" alt="logo">
+        </div>
+        <nav id="keypad">
+            <ul>
+                <li><a href="#about_us_section">Sobre Nosotros</a></li>
+                <li><a href="#contact_section">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="section_start">
+    <div id="box_title"><h1>Seguro No Pagamos Cooperativa</h1></div>
+    <img src="styles/images/presentation.jpg" alt="imagen de presentación" id="presentation_image"/>
+</section>
+
+<section id="about_us_section">
+    <div id=about_us_container">
+        <div id=about_us_title"><h2>sobre nosotros</h2></div>
+        <div id=about_us_paragraph1"><p>Somos una compañía que nos encontramos en el mercado hace 2 años brindando el
+            mejor servicio. Sabemos bien cuanto cuesta obtener las cosas hoy en día, por eso nos encargamos de
+            brindarles el mejor servicio de seguro, para que puedan descansar con tranquilidad sabiendo que estamos para
+            cuidarlos siempre. Con el festejo de este nuevo aniversario queremos contarles que desde ahora van a poder
+            solicitar una entrevista con algunos de nuestros asesores para ello deberán completar el siguiente
+            formulario para de esa forma poder brindarle la mejor atención personalizada. </p></div>
+    </div>
+</section>
+
+<section id="contact_section">
+    <div id="contact_title"><h2>Contacto</h2></div>
+    <form name="formContact" id="formContactId" onsubmit="submitInfo(); return false;">
+        <div>
+            <label for="nameId" >Nombre</label>
+            <input type="text" name="name" id="nameId"/>
+        </div>
+		<div id="e_name"></div>
+        <div>
+            <label for="lastNameId">Apellido</label>
+            <input type="text" name="last_name" id="lastNameId"/>
+        </div>
+        <div id="e_last_name"></div>
+        <div>
+            <label for="identificationNumberId">DNI</label>
+            <input type="number" name="identification_number" id="identificationNumberId"/>
+        </div>
+        <div>
+            <label for="emailId">Correo electrónico</label>
+            <input type="email" name="email" id="emailId"/>
+        </div>
+        <div id="e_email"></div>
+        <div>
+            <label for="phoneNumberId">Teléfono</label>
+            <input type="text" name="phone_number" id="phoneNumberId"/>
+        </div>
+        <div>
+            <label>Tipo de seguro</label>
+            <select name="type_of_insurance" id="type_of_insurance_id" onchange="GetTypeOfInsurance()">
+                <option value="basic">Básico</option>
+                <option value="medium">Intermedio</option>
+                <option value="premium">Premium</option>
+            </select>
+            <span id="cost_of_insurance"></span>
+            <div id="InsuranceTypeValue"/>
+        </div>
+        <button type="submit">Enviar Solicitud de consulta</button>
+    </form>
+</section>
+<footer id="footer_container">
+    <div id=tagline"><h3>Cuidamos lo suyo como lo nuestro.</h3></div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
