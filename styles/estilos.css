@@ -92,12 +92,6 @@ h1 {
 
 
 
-about_us_container {
-	height: 650px;
-	width: 480px;
-	background-color: #FFFFFF;
-}
-
 about_us_title {
 	height: 60px;
 	background-color: #FFFFFF;
@@ -112,31 +106,30 @@ h2 {
 	letter-spacing: 5px;
 	color: #059d4a;
 }
-about_us_paragraph1 {
+about_us_paragraph {
 	height: 230px;
 	background-color: #FFFFFF;
-	margin-left: 30px;
-	margin-bottom: 5px;
 	padding: 10px;
+	margin: 0 auto;
 	box-sizing: border-box;
 }
 
-about_us_paragraph1 p {
+about_us_paragraph p {
 	font-size: 18px;
-	text-align: justify;
+	text-align: center;
+	margin: 0 auto;
 }
-
 
 
 #contact_section {
-	height: 300px;
-	background-color: #059d4a;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #contact_title {
-	width: 920px;
-	background-color: #059d4a;
-	margin-left: 20px;
+	background-color: #8597a3;
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
@@ -145,10 +138,73 @@ about_us_paragraph1 p {
 	color: #FFFFFF;
 }
 
+.card-form {
+	padding: 8px;
+	width: 55%;
+	margin: 0 auto;
+}
+
+#type_of_insurance_id {
+	display: none;
+	color: #8597a3;
+
+}
+.input {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+form:focus-within {
+	background: #8597a3;
+	color: #ffffff;
+	transition: .50s;
+}
+
+.input-label {
+	color: #8597a3;
+	position: absolute;
+	transition: .25s;
+}
+
+.input-field{
+	border:0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee;
+	font: inherit;
+	font-size: 16px;
+}
+
+input-field:focus, valid, -within {
+	outline: 0;
+	border-bottom-color: #059d4a;
+}
+#button-style{
+	margin: 25px auto 0;
+}
+
+#button-style-submit {
+	font: inherit;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	background-color: #059d4a;
+	border-radius: 5px;
+	color: #FFF;
+	border: 0;
+	margin: 0 auto;
+
+}
+
+#button-style-submit, focus-within {
+	outline: 0;
+}
+
 #footer_container {
 	height: 50px;
 	background-color: #ffffff;
-
 }
 
 tagline {
@@ -218,12 +274,8 @@ h3 {
 		height: 300px;
 	}
 
-	about_us_container {
-		height: 300px;
-		width: 580px;
-	}
 
-	about_us_title {
+	title {
 		height: 40px;
 		width: 500px;
 		margin: 10px 0 0 30px;
@@ -234,31 +286,27 @@ h3 {
 		letter-spacing: 5px;
 		margin: auto;
 	}
-	about_us_paragraph1 {
+	about_us_paragraph {
 		height: 170px;
 		width: 500px;
 		box-sizing: border-box;
-		margin-bottom: 0;
+		margin: 0 auto;
 	}
 
-	about_us_paragraph1 p {
+	about_us_paragraph p {
 		font-size: 18px;
 		margin: 0;
 	}
 
-
-
 	#contact_section {
-		height: 300px;
+		height: 350px;
 	}
 
 	#contact_title {
-		width: 560px;
-		margin-left: 20px;
-		margin-bottom: 30px;
-		margin-top: 30px;
+		height: 40px;
+		width: 500px;
+		margin: 10px 0 0 40px;
 	}
-
 
 	tagline {
 		height: 65px;
@@ -350,17 +398,13 @@ h3 {
     }
 
 
-    about_us_container {
-        height: auto;
-        width: 100%;
-    }
 
     about_us_title {
         height: auto;
         margin: 10px 0 0 10px;
 	}
 
-    about_us_paragraph1 {
+    about_us_paragraph {
         height: auto;
         width: 100%;
         margin-left: 0;
@@ -369,19 +413,17 @@ h3 {
 	}
 
 
-    about_us_paragraph1 p {
+    about_us_paragraph p {
         font-size: 17px;
     }
 
     h3 {
         font-size: 18px;
-
+		margin-bottom: 20px;
       }
 
-
     #contact_section {
-        height: auto;
-        width: 100%;
+		height: 340px;
     }
 
     #contact_title {
