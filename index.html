@@ -30,53 +30,51 @@
 </section>
 
 <section id="about_us_section">
-        <div id="title"><h2>sobre nosotros</h2></div>
+        <div class="title"><h2>Sobre nosotros</h2></div>
         <div id="about_us_paragraph"><p>Somos una compañía que nos encontramos en el mercado hace 2 años brindando el
             mejor servicio. Sabemos bien cuanto cuesta obtener las cosas hoy en día, por eso nos encargamos de
             brindarles el mejor servicio de seguro, para que puedan descansar con tranquilidad sabiendo que estamos para
-            cuidarlos siempre. Con el festejo de este nuevo aniversario queremos contarles que desde ahora van a poder
-            solicitar una entrevista con algunos de nuestros asesores para ello deberán completar el siguiente
-            formulario para de esa forma poder brindarle la mejor atención personalizada. </p></div>
+            cuidarlos siempre.  </p></div>
 </section>
 
 <section id="contact_section">
-    <div id="contact_title"><h2>Contacto</h2></div>
+    <div class="title"> <h2>Contacto</h2></div>
     <form class="card-form" name="formContact" id="formContactId" onsubmit="submitInfo(); return false;">
         <div class="input">
+            <input type="text" name="name" id="nameId" class="input-field" required/>
             <label for="nameId" class="input-label" >Nombre</label>
-            <input type="text" name="name" id="nameId" class="input-field"/>
         </div>
-		<div id="e_name"></div>
+		<div id="e_name" class="error"></div>
         <div class="input">
+            <input type="text" name="last_name" id="lastNameId" class="input-field" required/>
             <label for="lastNameId" class="input-label" >Apellido</label>
-            <input type="text" name="last_name" id="lastNameId"class="input-field"/>
         </div>
-        <div id="e_last_name"></div>
+        <div id="e_last_name" class="error" ></div>
         <div class="input">
-            <label for="identificationNumberId" class="input-label" >DNI</label>
-            <input type="number" name="identification_number" id="identificationNumberId"class="input-field"/>
+            <input type="number" name="identification_number" id="identificationNumberId" class="input-field" required/>
+            <label for="identificationNumberId" class="input-label"  >DNI</label>
         </div>
         <div class="input">
+            <input type="email" name="email" id="emailId" class="input-field" required/>
             <label for="emailId" class="input-label" >Correo electrónico</label>
-            <input type="email" name="email" id="emailId"class="input-field"/>
         </div>
-        <div id="e_email"></div>
-        <div class="input">
+        <div id="e_email" class="error"></div>
+        <div class="input" >
+            <input type="number" name="phone_number" id="phoneNumberId" class="input-field" required/>
             <label for="phoneNumberId" class="input-label" >Teléfono</label>
-            <input type="number" name="phone_number" id="phoneNumberId"class="input-field"/>
         </div>
-        <div class="input">
-            <label class="input-label" id="type_of_insurance_id" class="input-field">Tipo de seguro</label>
-            <select name="type_of_insurance" class="input-field"  onchange="GetTypeOfInsurance()" >
-                <option value="basic">Básico</option>
-                <option value="medium">Intermedio</option>
-                <option value="premium">Premium</option>
+        <div class="input" id="e_type_of_insurance" >
+            <label  id="type_of_insurance_id" class="input-field">Tipo de seguro</label>
+            <select name="type_of_insurance" class="input-field"  onchange="GetTypeOfInsurance()">
+                <option value="basic" class="type">Básico</option>
+                <option value="medium" class="type">Intermedio</option>
+                <option value="premium" class="type">Premium</option>
             </select>
             <span id="cost_of_insurance"></span>
-            <div id="InsuranceTypeValue"/>
+            <div id="InsuranceTypeValue"></div>
         </div>
         <div id="button-style">
-        <button type="submit" id="button-style-submit">Enviar Solicitud de consulta</button>
+        <button type="submit"  value="Submit!" id="button-style-submit" onclick="SendForm()">Enviar formulario</button>
         </div>
     </form>
 </section>
