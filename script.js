@@ -36,6 +36,16 @@ function GetTypeOfInsurance() {
 }
 GetTypeOfInsurance()
 
+
 function SendForm() {
-    alert("Su formulario ha sido enviado!");
+    var name = document.formContact.name.value
+    var last_name = document.formContact.last_name.value
+    var identification_number = document.formContact.identification_number.value
+    var email = document.formContact.email.value
+    var phone_number = document.formContact.phone_number.value
+    if (name ==="", last_name === "", identification_number === "", email === "" , phone_number ==="") {
+        alert("Revise sus datos enviados");
+    } else {
+        alert("Su formulario ha sido enviado!");
+    }
 }

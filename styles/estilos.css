@@ -105,7 +105,10 @@ h2 {
 	letter-spacing: 5px;
 	color: #059d4a;
 }
-about_us_paragraph {
+#about_us_section {
+	height: 150px;
+}
+#about_us_paragraph {
 	height: 230px;
 	background-color: #FFFFFF;
 	padding: 10px;
@@ -113,7 +116,7 @@ about_us_paragraph {
 	box-sizing: border-box;
 }
 
-about_us_paragraph p {
+#about_us_paragraph p {
 	font-size: 18px;
 	text-align: center;
 	margin: 0 auto;
@@ -134,7 +137,8 @@ about_us_paragraph p {
 }
 
 #type_of_insurance_id {
-	margin-top: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .input {
@@ -180,10 +184,7 @@ form:focus-within {
 }
 /* The general sibling combinator (~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element. */
 
-.error {
-	color: #d98817;
-	margin-bottom: 5px;
-}
+
 .type {
 	font-weight: bold;
 }
@@ -201,7 +202,10 @@ form:focus-within {
 	color: #FFF;
 	border: 0;
 	margin: 0 auto;
+}
 
+#button-style-submit:hover {
+	color: #585058;
 }
 
 #button-style-submit {
@@ -213,7 +217,7 @@ form:focus-within {
 	background-color: #ffffff;
 }
 
-tagline {
+#tagline {
 	background-color: #ffffff;
 	margin-left: 30px;
 	padding: 10px;
@@ -228,6 +232,8 @@ h3 {
 	position: relative;
 	letter-spacing: 5px;
 }
+
+
 
 /* inicio media 600px a 1023px*/
 @media all and (min-width: 600px) and (max-width: 1023px) {
@@ -276,7 +282,7 @@ h3 {
 		padding: 10px;
 	}
 
-	about_us_section {
+	#about_us_section {
 		height: 300px;
 	}
 
@@ -292,14 +298,14 @@ h3 {
 		letter-spacing: 5px;
 		margin: auto;
 	}
-	about_us_paragraph {
+	#about_us_paragraph {
 		height: 170px;
 		width: 500px;
 		box-sizing: border-box;
 		margin: 0 auto;
 	}
 
-	about_us_paragraph p {
+	#about_us_paragraph p {
 		font-size: 18px;
 		margin: 0;
 	}
@@ -308,7 +314,7 @@ h3 {
 		height: 450px;
 	}
 
-	tagline {
+	#tagline {
 		height: 65px;
 		padding: 10px;
 	}
@@ -392,13 +398,13 @@ h3 {
         width: 100%;
     }
 
-    about_us_section {
-        height: 500px;
+    #about_us_section {
+        height: 200px;
 		width: 100%;
     }
 
 
-    about_us_paragraph {
+    #about_us_paragraph {
         height: auto;
         width: 100%;
         margin-left: 0;
@@ -406,7 +412,7 @@ h3 {
         padding: 5px;
 	}
 
-    about_us_paragraph p {
+    #about_us_paragraph p {
         font-size: 17px;
     }
 
@@ -426,7 +432,7 @@ h3 {
 		margin: 0;
     }
 
-	tagline {
+	#tagline {
 		height: auto;
 		width: 90%;
 		margin-left: 20px;

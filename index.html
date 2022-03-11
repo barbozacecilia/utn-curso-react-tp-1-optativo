@@ -39,33 +39,30 @@
 
 <section id="contact_section">
     <div class="title"> <h2>Contacto</h2></div>
-    <form class="card-form" name="formContact" id="formContactId" onsubmit="submitInfo(); return false;">
+    <form class="card-form" name="formContact" id="formContactId" >
         <div class="input">
-            <input type="text" name="name" id="nameId" class="input-field" required/>
+            <input type="text" name="name"  id="nameId" class="input-field" required/>
             <label for="nameId" class="input-label" >Nombre</label>
         </div>
-		<div id="e_name" class="error"></div>
         <div class="input">
-            <input type="text" name="last_name" id="lastNameId" class="input-field" required/>
+            <input type="text" name="last_name" id="lastNameId" class="input-field"  required/>
             <label for="lastNameId" class="input-label" >Apellido</label>
         </div>
-        <div id="e_last_name" class="error" ></div>
         <div class="input">
             <input type="number" name="identification_number" id="identificationNumberId" class="input-field" required/>
-            <label for="identificationNumberId" class="input-label"  >DNI</label>
+            <label for="identificationNumberId" class="input-label">DNI</label>
         </div>
         <div class="input">
             <input type="email" name="email" id="emailId" class="input-field" required/>
             <label for="emailId" class="input-label" >Correo electrónico</label>
         </div>
-        <div id="e_email" class="error"></div>
         <div class="input" >
             <input type="number" name="phone_number" id="phoneNumberId" class="input-field" required/>
-            <label for="phoneNumberId" class="input-label" >Teléfono</label>
+            <label for="phoneNumberId" class="input-label">Teléfono</label>
         </div>
-        <div class="input" id="e_type_of_insurance" >
-            <label  id="type_of_insurance_id" class="input-field">Tipo de seguro</label>
-            <select name="type_of_insurance" class="input-field"  onchange="GetTypeOfInsurance()">
+        <div class="input" >
+            <label  class="input-field">Tipo de seguro</label>
+            <select name="type_of_insurance" id="type_of_insurance_id" class="input-field"  onchange="GetTypeOfInsurance()">
                 <option value="basic" class="type">Básico</option>
                 <option value="medium" class="type">Intermedio</option>
                 <option value="premium" class="type">Premium</option>
@@ -73,8 +70,9 @@
             <span id="cost_of_insurance"></span>
             <div id="InsuranceTypeValue"></div>
         </div>
-        <div id="button-style">
-        <button type="submit"  value="Submit!" id="button-style-submit" onclick="SendForm()">Enviar formulario</button>
+            <div id="button-style">
+             <button type="submit"  value="Submit!" id="button-style-submit" onclick="SendForm()">Enviar formulario</button>
+            </div>
         </div>
     </form>
 </section>
